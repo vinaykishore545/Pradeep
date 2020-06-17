@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:id="@+id/container">
+    <ScrollView
+        android:layout_above="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textColor="#4a4a4a"
+        android:text="Welcome"
+        android:fontFamily="@font/my_custom_font"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#6a5c3b"
+        android:text="We need location permission for this app, your current location will be used for getting your country name and that will be help for currency converter. So please give the access and move forward the app. Thank you"
+        android:layout_marginTop="27dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:lineSpacingExtra="3dp"
+        android:fontFamily="@font/my_custom_font_semi_bold"
+        />
+            <TextView
+                android:id="@+id/ok"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:textAllCaps="false"
+                android:background="@color/colorPrimary"
+                android:textSize="18sp"
+                style="@style/Widget.MaterialComponents.Button.TextButton1"
+                android:fontFamily="@font/my_custom_font_semi_bold"
+                android:textColor="@color/white"
+                android:text="Give Access"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
